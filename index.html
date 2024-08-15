@@ -9,38 +9,14 @@
 </head>
    
 <body>
-    
-    <header>
-        <h1 class="main-title">Kalkulator BMI</h1>
-    
-    </header>
-    
     <main> 
         <aside>
             <article>
-                <p>Kalkulator BMI (Indeks Massa Tubuh) adalah alat yang digunakan untuk menghitung rasio antara berat badan dan tinggi badan seseorang, 
+                <div><h2>Kalkulator BMI</h2></div>
+                <p class="paragraph">Kalkulator BMI (Indeks Massa Tubuh) adalah alat yang digunakan untuk menghitung rasio antara berat badan dan tinggi badan seseorang, 
                 yang membantu menentukan apakah seseorang memiliki berat badan yang sehat, underweight, overweight, atau obesitas. 
                 Dengan memasukkan berat badan dan tinggi badan ke dalam kalkulator, hasil perhitungan akan memberikan angka BMI yang kemudian dapat dibandingkan dengan kategori standar kesehatan yang telah ditetapkan oleh organisasi kesehatan untuk menilai risiko kesehatan yang terkait dengan berat badan</p>
             </article>
-
-            <form>
-                <div>
-                    <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="Pria" name="jenis-kelamin" value="Pria"> <label for="Pria">Pria</label>
-                    <input type="radio" id="Wanita" name="jenis-kelamin" value="Pria"> <label for="Wanita">Wanita</label>
-                </div>
-
-                <div>
-                    <h3>Berat Badan</h3>
-                    <input type="number">
-                </div>
-
-                <div>
-                    <button>Hitung BMI</button>
-                    <button>Reset</button>
-                </div>
-
-            </form>
 
             <article>
             <header>
@@ -81,32 +57,44 @@
              Selain itu, kalkulator BMI dapat berfungsi sebagai alat awal untuk memulai diskusi dengan profesional kesehatan mengenai perubahan gaya hidup atau perawatan yang diperlukan, 
              sehingga berperan penting dalam upaya pencegahan dan pengelolaan kondisi kesehatan terkait berat badan. 
             </p>
-
             </article>
-       
         </aside>
 
         <aside>
             <section>
-                <p>
-                    <div>
-                Organisasi kesehatan, seperti Organisasi Kesehatan Dunia (WHO), 
-                telah menetapkan kategori standar berdasarkan nilai Indeks Massa Tubuh (BMI) untuk membantu menilai status kesehatan terkait berat badan seseorang. 
-                Berikut adalah kategori-kategori tersebut:
-                    </div>
-    
-                 Kalkulator BMI menawarkan manfaat signifikan dalam memantau kesehatan individu secara sederhana dan cepat. 
-                 Dengan menghitung rasio antara berat badan dan tinggi badan, kalkulator ini membantu mengidentifikasi apakah seseorang memiliki berat badan yang sehat, kurang, atau berlebih berdasarkan kategori yang diakui secara medis. 
-                 Hal ini memungkinkan individu untuk memahami risiko kesehatan yang mungkin terkait dengan berat badan mereka, seperti risiko penyakit jantung, diabetes, atau malnutrisi. 
-                 Selain itu, kalkulator BMI dapat berfungsi sebagai alat awal untuk memulai diskusi dengan profesional kesehatan mengenai perubahan gaya hidup atau perawatan yang diperlukan, 
-                 sehingga berperan penting dalam upaya pencegahan dan pengelolaan kondisi kesehatan terkait berat badan. 
-                </p>
+                <h1>Kalkulator BMI</h1>
+                <div class="form-group">
+                <label for="weight">Berat Badan:</label>
+                <input type="number" id="weight" placeholder="Masukkan berat badan">
+                <select id="weight-unit">
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+            </select>
+                </div>
+                    <div class="form-group">
+                    <label for="height">Tinggi Badan:</label>
+                    <input type="number" id="height" placeholder="Masukkan tinggi badan">
+                    <select id="height-unit">
+                    <option value="m">m</option>
+                    <option value="in">in</option>
+                    </select>
+                </div>
+            <div class="form-group">
+                <label for="age">Usia:</label>
+                <input type="number" id="age" placeholder="Masukkan usia">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="male" checked> Pria
+                <input type="radio" name="gender" value="female"> Wanita
+            </div>
+                <button onclick="calculateBMI()">Hitung</button>
+                <div id="result"></div>
+                <script src="script.js"></script>
             </section>
         </aside>
-
     </main>
-
-    <footer></footer>
+    <footer> Made by Dyza </footer>
 
 </body>
 </html>

@@ -1,5 +1,4 @@
 
-
 .main-title {
     text-align: center;
 }
@@ -16,4 +15,18 @@ form{
 
 aside {
     padding: 48px;
+}
+
+
+
+input [type=number] {
+    width: 100%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid cornsilk;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 14px;
 }
