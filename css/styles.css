@@ -1,5 +1,19 @@
 
+
+.main-title {
+    text-align: center;
+}
+
+
+main{
+    display: flex;
+}
+
 form{
     padding: 10px;
     background-color: cornflowerblue;
+}
+
+aside {
+    padding: 48px;
 }
